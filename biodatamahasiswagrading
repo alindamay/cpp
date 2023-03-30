@@ -1,0 +1,35 @@
+#include <iostream>
+
+using namespace std;
+int main()
+{
+    int input;
+    char nama[50],jurusan[30],nim[10];
+    cout<<"====Biodata Mahasiswa STT Duta Bangsa====\n";
+	cout<<"Masukkan Nama Mahasiswa : ";
+	cin.getline(nama,50);
+	cout<<"Masukkan Nim : ";
+	cin.getline(nim,10);
+	cout<<"Masukkan Jurusan : ";
+	cin.getline(jurusan,30);
+    cout << "Masukkan Nilai : ";
+    cin >>input;
+	cout<<"\n\n\n";
+	cout<<"Tampilan Biodata Mahasiswa \n";
+	cout<<"Nama Mahasiswa : "<<nama;
+	cout<<"\nNIM : "<<nim;
+	cout<<"\nJurusan : "<<jurusan;
+	cout<<"\n";
+    if ((input>=80)and(input<=100))
+    {
+        cout << "Anda Mendapatkan Nilai A";
+    }
+    else if ((input<=79)and(input>=0))
+    {
+        cout << " ";
+    }
+    
+    cout<<"\nSTT Duta Bangsa";
+    
+    return 0;
+}
